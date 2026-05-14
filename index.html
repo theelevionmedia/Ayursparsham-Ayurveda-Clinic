@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ayursparsham Ayurveda Clinic | Elayavoor, Kannur</title>
+  <meta name="description" content="Ayursparsham Ayurveda Clinic in Elayavoor, Kannur, Kerala. Authentic Kerala Ayurveda treatments led by Dr. Surya. Panchakarma, Shirodhara, Post Pregnancy Care & more." />
+  <meta name="keywords" content="Ayurveda clinic Kannur, Ayursparsham, Dr Surya, Elayavoor Ayurveda, Panchakarma Kerala, Shirodhara, Prasavaraksha, postnatal Ayurveda" />
+  <meta property="og:title" content="Ayursparsham Ayurveda Clinic | Elayavoor, Kannur" />
+  <meta property="og:description" content="Authentic Kerala Ayurveda treatments rooted in tradition. Book a consultation with Dr. Surya at Ayursparsham, Elayavoor, Kannur." />
+  <meta property="og:image" content="logo.png" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://ayursparsham.in/" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Ayursparsham Ayurveda Clinic",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Elayavoor",
+      "addressLocality": "Kannur",
+      "addressRegion": "Kerala",
+      "addressCountry": "IN"
+    },
+    "telephone": "+918848453300",
+    "openingHours": "Mo-Sa 09:00-17:30",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "11.9100",
+      "longitude": "75.4900"
+    }
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green-deep: #1a3a2a;
+      --green-mid: #2a5a40;
+      --green-light: #3d7a58;
+      --green-pale: #e8f0eb;
+      --gold: #C9A84C;
+      --gold-light: #e0c070;
+      --gold-pale: #f5edd8;
+      --off-white: #faf7f2;
+      --text-dark: #1a2318;
+      --text-mid: #3d4a3a;
+      --text-muted: #6b7c68;
+      --white: #ffffff;
+      --shadow-sm: 0 2px 8px rgba(26,58,42,0.10);
+      --shadow-md: 0 6px 24px rgba(26,58,42,0.15);
+      --shadow-lg: 0 16px 48px rgba(26,58,42,0.20);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --transition: 0.28s cubic-bezier(0.4,0,0.2,1);
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--off-white);
+      color: var(--text-dark);
+      font-size: 16px;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    h1,h2,h3,h4 { font-family: 'Cormorant Garamond', serif; line-height: 1.2; }
+    img { display: block; max-width: 100%; }
+    a { text-decoration: none; color: inherit; }
+    .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    .section-label {
+      display: inline-block;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      color: var(--green-deep);
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .section-sub {
+      font-size: 1rem;
+      color: var(--text-muted);
+      max-width: 540px;
+      line-height: 1.7;
+    }
+    /* Scroll animations */
+    .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-left { opacity: 0; transform: translateX(-32px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal-left.visible { opacity: 1; transform: translateX(0); }
+    .reveal-right { opacity: 0; transform: translateX(32px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal-right.visible { opacity: 1; transform: translateX(0); }
+
+    /* ── NAVBAR ── */
+    #navbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 900;
+      background: rgba(26,58,42,0.97);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(201,168,76,0.15);
+      transition: box-shadow var(--transition);
+    }
+    #navbar.scrolled { box-shadow: var(--shadow-md); }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 68px; padding: 0 24px;
+      max-width: 1200px; margin: 0 auto;
+    }
+    .nav-logo img { height: 44px; width: auto; }
+    .nav-links {
+      display: flex; gap: 32px; list-style: none;
+    }
+    .nav-links a {
+      font-size: 0.85rem; font-weight: 500; letter-spacing: 0.06em;
+      color: rgba(255,255,255,0.85);
+      transition: color var(--transition);
+      position: relative; padding-bottom: 3px;
+    }
+    .nav-links a::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 100%;
+      height: 1.5px; background: var(--gold);
+      transition: right var(--transition);
+    }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-links a:hover::after { right: 0; }
+    .nav-cta {
+      background: var(--gold); color: var(--green-deep) !important;
+      padding: 8px 20px; border-radius: 100px;
+      font-weight: 600 !important; font-size: 0.82rem !important;
+      transition: background var(--transition), transform var(--transition) !important;
+    }
+    .nav-cta:hover { background: var(--gold-light) !important; transform: translateY(-1px); }
+    .nav-cta::after { display: none !important; }
+    .hamburger {
+      display: none; flex-direction: column; gap: 5px;
+      background: none; border: none; cursor: pointer;
+      padding: 6px; border-radius: 4px;
+    }
+    .hamburger span {
+      display: block; width: 24px; height: 2px;
+      background: var(--white); border-radius: 2px;
+      transition: all var(--transition);
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .mobile-menu {
+      display: none; flex-direction: column; gap: 0;
+      background: var(--green-deep); border-top: 1px solid rgba(201,168,76,0.15);
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      padding: 14px 24px; font-size: 0.9rem; font-weight: 500;
+      color: rgba(255,255,255,0.85); border-bottom: 1px solid rgba(255,255,255,0.06);
+      transition: color var(--transition), background var(--transition);
+    }
+    .mobile-menu a:hover { color: var(--gold); background: rgba(201,168,76,0.06); }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+    }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0d2018 0%, #1a3a2a 40%, #2a5240 70%, #1e4232 100%);
+      position: relative; display: flex; align-items: center; justify-content: center;
+      overflow: hidden;
+    }
+    .hero-bg-pattern {
+      position: absolute; inset: 0; opacity: 0.04;
+      background-image: radial-gradient(circle at 20% 50%, var(--gold) 1px, transparent 1px),
+                        radial-gradient(circle at 80% 20%, var(--gold) 1px, transparent 1px);
+      background-size: 60px 60px, 80px 80px;
+    }
+    .hero-leaves {
+      position: absolute; top: 0; right: 0; width: 45%; height: 100%;
+      opacity: 0.06;
+      background: radial-gradient(ellipse at 80% 30%, var(--green-light) 0%, transparent 60%);
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      text-align: center; padding: 120px 24px 80px;
+      max-width: 760px;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: rgba(201,168,76,0.12); border: 1px solid rgba(201,168,76,0.3);
+      border-radius: 100px; padding: 8px 20px; margin-bottom: 36px;
+      box-shadow: 0 4px 20px rgba(201,168,76,0.1);
+    }
+    .hero-badge-stars { display: flex; gap: 2px; }
+    .hero-badge-stars svg { width: 15px; height: 15px; }
+    .hero-badge-text {
+      font-size: 0.82rem; font-weight: 500; color: var(--gold);
+      letter-spacing: 0.04em;
+    }
+    .hero-tagline {
+      font-size: clamp(2.6rem, 6vw, 4.2rem);
+      font-weight: 600; color: var(--white);
+      line-height: 1.12; margin-bottom: 20px;
+    }
+    .hero-tagline em { color: var(--gold); font-style: normal; }
+    .hero-sub {
+      font-size: clamp(0.95rem, 2vw, 1.15rem);
+      color: rgba(255,255,255,0.65); margin-bottom: 44px;
+      letter-spacing: 0.02em;
+    }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--gold); color: var(--green-deep);
+      font-size: 0.95rem; font-weight: 600; letter-spacing: 0.04em;
+      padding: 16px 36px; border-radius: 100px;
+      box-shadow: 0 6px 28px rgba(201,168,76,0.35);
+      transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+      cursor: pointer;
+    }
+    .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 10px 36px rgba(201,168,76,0.45); }
+    .btn-primary svg { width: 20px; height: 20px; }
+    .hero-scroll-hint {
+      position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+      opacity: 0.5;
+    }
+    .hero-scroll-hint span { font-size: 0.7rem; letter-spacing: 0.15em; color: var(--white); text-transform: uppercase; }
+    .scroll-line {
+      width: 1px; height: 40px;
+      background: linear-gradient(to bottom, var(--gold), transparent);
+      animation: scrollPulse 2s ease-in-out infinite;
+    }
+    @keyframes scrollPulse { 0%,100%{opacity:0.3} 50%{opacity:1} }
+
+    /* ── ABOUT ── */
+    #about { padding: 100px 0; background: var(--white); }
+    .about-inner {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center;
+    }
+    .about-image-wrap {
+      position: relative; border-radius: var(--radius-lg); overflow: hidden;
+    }
+    .about-image-wrap img {
+      width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: var(--radius-lg);
+    }
+    .about-image-badge {
+      position: absolute; bottom: 24px; left: 24px;
+      background: var(--green-deep); color: var(--white);
+      padding: 14px 20px; border-radius: var(--radius-md);
+      box-shadow: var(--shadow-md);
+    }
+    .about-image-badge .num { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 600; color: var(--gold); }
+    .about-image-badge .txt { font-size: 0.72rem; letter-spacing: 0.08em; opacity: 0.75; margin-top: 2px; }
+    .about-text .section-sub { max-width: 100%; margin-bottom: 28px; }
+    .about-pillars {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 32px;
+    }
+    .pillar-card {
+      background: var(--off-white); border-radius: var(--radius-sm);
+      padding: 18px; border-left: 3px solid var(--gold);
+    }
+    .pillar-card .p-icon { width: 32px; height: 32px; margin-bottom: 10px; color: var(--gold); }
+    .pillar-card h4 { font-size: 0.95rem; font-weight: 600; color: var(--green-deep); margin-bottom: 4px; font-family: 'Inter', sans-serif; }
+    .pillar-card p { font-size: 0.8rem; color: var(--text-muted); line-height: 1.5; }
+    @media (max-width: 768px) {
+      .about-inner { grid-template-columns: 1fr; gap: 40px; }
+      .about-pillars { grid-template-columns: 1fr 1fr; }
+    }
+
+    /* ── SERVICES ── */
+    #services { padding: 100px 0; background: var(--off-white); }
+    .services-header { text-align: center; margin-bottom: 56px; }
+    .services-header .section-sub { margin: 0 auto; }
+    .services-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+    }
+    .service-card {
+      background: var(--white); border-radius: var(--radius-md); overflow: hidden;
+      box-shadow: var(--shadow-sm); border: 1px solid rgba(26,58,42,0.06);
+      transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+      cursor: default;
+    }
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg), 0 0 0 2px var(--green-light);
+      border-color: var(--green-light);
+    }
+    .service-img {
+      width: 100%; aspect-ratio: 3/2; object-fit: cover;
+      background: linear-gradient(135deg, var(--green-pale), var(--gold-pale));
+    }
+    .service-img-placeholder {
+      width: 100%; aspect-ratio: 3/2;
+      background: linear-gradient(135deg, #d4e8da 0%, #f0e9d2 100%);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .service-img-placeholder svg { width: 48px; height: 48px; opacity: 0.35; color: var(--green-mid); }
+    .service-body { padding: 20px; }
+    .service-body h3 { font-size: 1.15rem; font-weight: 600; color: var(--green-deep); margin-bottom: 6px; }
+    .service-body p { font-size: 0.84rem; color: var(--text-muted); line-height: 1.6; }
+    .service-tag {
+      display: inline-block; margin-top: 10px;
+      font-size: 0.68rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--gold); background: var(--gold-pale);
+      padding: 3px 10px; border-radius: 100px;
+    }
+    @media (max-width: 900px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 520px) { .services-grid { grid-template-columns: 1fr; } }
+
+    /* ── GALLERY ── */
+    #gallery { padding: 100px 0; background: var(--green-deep); }
+    .gallery-header { text-align: center; margin-bottom: 52px; }
+    .gallery-header .section-title { color: var(--white); }
+    .gallery-header .section-sub { color: rgba(255,255,255,0.55); margin: 0 auto; }
+    .gallery-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+    }
+    .gallery-item {
+      position: relative; border-radius: var(--radius-md); overflow: hidden;
+      cursor: pointer; aspect-ratio: 4/3;
+    }
+    .gallery-item img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.5s ease;
+      background: linear-gradient(135deg, #2a5a40, #1a3a2a);
+    }
+    .gallery-item-placeholder {
+      width: 100%; height: 100%;
+      background: linear-gradient(135deg, #2a5a40 0%, #1e4232 100%);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .gallery-item-placeholder svg { width: 40px; height: 40px; opacity: 0.3; color: var(--gold); }
+    .gallery-item::after {
+      content: ''; position: absolute; inset: 0;
+      background: rgba(26,58,42,0.4);
+      opacity: 0; transition: opacity var(--transition);
+    }
+    .gallery-item:hover img { transform: scale(1.06); }
+    .gallery-item:hover::after { opacity: 1; }
+    .gallery-zoom {
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
+      z-index: 2; width: 44px; height: 44px; background: rgba(255,255,255,0.9);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      opacity: 0; transition: opacity var(--transition);
+    }
+    .gallery-item:hover .gallery-zoom { opacity: 1; }
+    .gallery-zoom svg { width: 20px; height: 20px; color: var(--green-deep); }
+    @media (max-width: 640px) { .gallery-grid { grid-template-columns: repeat(2, 1fr); } }
+
+    /* Lightbox */
+    .lightbox {
+      display: none; position: fixed; inset: 0; z-index: 1000;
+      background: rgba(0,0,0,0.92); align-items: center; justify-content: center;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox-inner { position: relative; max-width: 90vw; max-height: 88vh; }
+    .lightbox-inner img { max-height: 82vh; max-width: 88vw; border-radius: var(--radius-sm); object-fit: contain; }
+    .lightbox-inner .lb-placeholder {
+      width: min(600px, 88vw); height: min(450px, 60vh);
+      background: linear-gradient(135deg, #2a5a40, #1a3a2a);
+      border-radius: var(--radius-sm);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .lb-close {
+      position: absolute; top: -44px; right: 0;
+      background: rgba(255,255,255,0.12); border: none; color: var(--white);
+      width: 36px; height: 36px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; transition: background var(--transition);
+    }
+    .lb-close:hover { background: rgba(255,255,255,0.25); }
+    .lb-close svg { width: 18px; height: 18px; }
+    .lb-prev, .lb-next {
+      position: fixed; top: 50%; transform: translateY(-50%);
+      background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+      color: var(--white); width: 48px; height: 48px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; transition: background var(--transition);
+    }
+    .lb-prev:hover, .lb-next:hover { background: rgba(255,255,255,0.25); }
+    .lb-prev { left: 16px; }
+    .lb-next { right: 16px; }
+    .lb-prev svg, .lb-next svg { width: 22px; height: 22px; }
+
+    /* ── REVIEWS ── */
+    #reviews { padding: 100px 0; background: var(--white); }
+    .reviews-header { text-align: center; margin-bottom: 52px; }
+    .reviews-header .section-sub { margin: 0 auto; }
+    .reviews-outer { position: relative; }
+    .reviews-track-wrap { overflow: hidden; }
+    .reviews-track {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+    }
+    .review-card {
+      background: var(--off-white); border-radius: var(--radius-md);
+      padding: 28px; border: 1px solid rgba(26,58,42,0.07);
+      box-shadow: var(--shadow-sm);
+      display: flex; flex-direction: column; gap: 14px;
+    }
+    .review-top { display: flex; align-items: center; gap: 14px; }
+    .review-avatar {
+      width: 44px; height: 44px; border-radius: 50%;
+      background: var(--green-deep); color: var(--gold);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 600;
+      flex-shrink: 0;
+    }
+    .review-name { font-size: 0.9rem; font-weight: 600; color: var(--green-deep); }
+    .review-stars { display: flex; gap: 2px; margin-top: 3px; }
+    .review-stars svg { width: 14px; height: 14px; }
+    .review-text { font-size: 0.88rem; color: var(--text-mid); line-height: 1.7; }
+    .review-text .short { }
+    .review-text .long { display: none; }
+    .review-text.expanded .long { display: inline; }
+    .read-more-btn {
+      background: none; border: none; color: var(--gold); font-size: 0.82rem;
+      font-weight: 600; cursor: pointer; padding: 0; margin-top: 4px;
+      transition: color var(--transition);
+    }
+    .read-more-btn:hover { color: var(--green-deep); }
+    .reviews-controls {
+      display: none; justify-content: center; gap: 12px; margin-top: 28px;
+    }
+    .rev-btn {
+      width: 44px; height: 44px; border-radius: 50%;
+      background: var(--green-deep); border: none; color: var(--white);
+      display: flex; align-items: center; justify-content: center; cursor: pointer;
+      transition: background var(--transition), transform var(--transition);
+    }
+    .rev-btn:hover { background: var(--green-mid); transform: scale(1.05); }
+    .rev-btn svg { width: 20px; height: 20px; }
+    @media (max-width: 900px) {
+      .reviews-track { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .reviews-track-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; scroll-snap-type: x mandatory; scrollbar-width: none; }
+      .reviews-track-wrap::-webkit-scrollbar { display: none; }
+      .reviews-track { display: flex; gap: 16px; padding-bottom: 8px; }
+      .review-card { min-width: 80vw; scroll-snap-align: start; flex-shrink: 0; }
+      .reviews-controls { display: flex; }
+    }
+
+    /* ── CONTACT ── */
+    #contact { padding: 100px 0; background: var(--off-white); }
+    .contact-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+    .contact-info { }
+    .contact-info .section-sub { margin-bottom: 32px; }
+    .contact-detail {
+      display: flex; gap: 14px; align-items: flex-start; margin-bottom: 20px;
+    }
+    .contact-detail-icon {
+      width: 44px; height: 44px; background: var(--green-pale); border-radius: var(--radius-sm);
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .contact-detail-icon svg { width: 20px; height: 20px; color: var(--green-deep); }
+    .contact-detail-text { }
+    .contact-detail-text strong { font-size: 0.82rem; font-weight: 600; color: var(--green-deep); display: block; margin-bottom: 3px; text-transform: uppercase; letter-spacing: 0.07em; }
+    .contact-detail-text span { font-size: 0.9rem; color: var(--text-mid); line-height: 1.6; }
+    .hours-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    .hours-table td { padding: 8px 0; font-size: 0.88rem; color: var(--text-mid); border-bottom: 1px solid rgba(26,58,42,0.08); }
+    .hours-table td:first-child { color: var(--green-deep); font-weight: 500; width: 50%; }
+    .hours-table tr:last-child td { border-bottom: none; }
+    .btn-whatsapp {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: #25D366; color: var(--white);
+      font-size: 0.9rem; font-weight: 600; padding: 14px 28px; border-radius: 100px;
+      box-shadow: 0 6px 20px rgba(37,211,102,0.3);
+      transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+      margin-top: 24px;
+    }
+    .btn-whatsapp:hover { background: #1da851; transform: translateY(-2px); box-shadow: 0 10px 28px rgba(37,211,102,0.4); }
+    .btn-whatsapp svg { width: 20px; height: 20px; }
+    .social-row { display: flex; gap: 12px; margin-top: 20px; }
+    .social-link {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: var(--green-deep); color: var(--white);
+      display: flex; align-items: center; justify-content: center;
+      transition: background var(--transition), transform var(--transition);
+    }
+    .social-link:hover { background: var(--green-mid); transform: scale(1.1); }
+    .social-link svg { width: 18px; height: 18px; }
+    .map-wrap { border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-md); }
+    .map-wrap iframe { width: 100%; height: 360px; border: none; display: block; }
+    @media (max-width: 768px) { .contact-inner { grid-template-columns: 1fr; gap: 40px; } }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--green-deep); padding: 52px 0 0;
+    }
+    .footer-top {
+      display: flex; flex-direction: column; align-items: center; gap: 16px;
+      text-align: center; padding-bottom: 36px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .footer-logo img { height: 52px; }
+    .footer-tagline { font-size: 0.85rem; color: rgba(255,255,255,0.45); letter-spacing: 0.06em; }
+    .footer-social { display: flex; gap: 12px; }
+    .footer-social-link {
+      width: 38px; height: 38px; border-radius: 50%;
+      background: rgba(255,255,255,0.08); color: var(--white);
+      display: flex; align-items: center; justify-content: center;
+      transition: background var(--transition);
+    }
+    .footer-social-link:hover { background: rgba(201,168,76,0.2); color: var(--gold); }
+    .footer-social-link svg { width: 17px; height: 17px; }
+    .footer-bottom {
+      padding: 18px 24px; text-align: center;
+    }
+    .footer-copy { font-size: 0.78rem; color: rgba(255,255,255,0.35); margin-bottom: 6px; }
+    .footer-credit {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.75rem; font-weight: 500;
+      letter-spacing: 0.3em; color: var(--gold);
+      text-transform: uppercase;
+    }
+
+    /* ── FLOATING WA ── */
+    .float-wa {
+      position: fixed; bottom: 24px; right: 24px; z-index: 999;
+      width: 56px; height: 56px; border-radius: 50%;
+      background: #25D366; color: var(--white);
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 6px 24px rgba(37,211,102,0.45);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .float-wa:hover { transform: scale(1.1); box-shadow: 0 10px 32px rgba(37,211,102,0.55); }
+    .float-wa svg { width: 30px; height: 30px; }
+    .float-wa::before {
+      content: ''; position: absolute; inset: -3px; border-radius: 50%;
+      background: rgba(37,211,102,0.25);
+      animation: waPulse 2.5s ease-in-out infinite;
+    }
+    @keyframes waPulse { 0%,100%{transform:scale(1);opacity:0.6} 50%{transform:scale(1.3);opacity:0} }
+
+    /* Divider */
+    .section-divider {
+      width: 60px; height: 2px; background: var(--gold); margin: 20px 0;
+    }
+    .center .section-divider { margin: 20px auto; }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo" aria-label="Ayursparsham home">
+      <img src="logopng.png" alt="Ayursparsham Ayurveda Clinic" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Our Space</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://wa.me/918848453300" class="nav-cta" target="_blank" rel="noopener">Book Now</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu" role="menu">
+    <a href="#about" role="menuitem">About</a>
+    <a href="#services" role="menuitem">Services</a>
+    <a href="#gallery" role="menuitem">Our Space</a>
+    <a href="#reviews" role="menuitem">Reviews</a>
+    <a href="#contact" role="menuitem">Contact</a>
+    <a href="https://wa.me/918848453300" role="menuitem" target="_blank" rel="noopener" style="color:var(--gold)">Book a Consultation</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero" aria-label="Hero">
+  <div class="hero-bg-pattern" aria-hidden="true"></div>
+  <div class="hero-leaves" aria-hidden="true"></div>
+  <div class="hero-content">
+    <div class="hero-badge reveal">
+      <div class="hero-badge-stars" aria-label="4.8 out of 5 stars">
+        <!-- 5 gold stars -->
+        <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+        <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+        <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+        <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+        <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+      </div>
+      <span class="hero-badge-text">4.8 Google Rating</span>
+    </div>
+    <h1 class="hero-tagline reveal">Ancient Wisdom.<br><em>Modern Healing.</em></h1>
+    <p class="hero-sub reveal">Authentic Ayurveda treatments rooted in Kerala tradition</p>
+    <a href="https://wa.me/918848453300" class="btn-primary reveal" target="_blank" rel="noopener" aria-label="Book a consultation on WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.554 4.1 1.52 5.824L.057 23.272a.75.75 0 00.922.922l5.448-1.463A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.9 0-3.68-.516-5.197-1.413l-.37-.22-3.836 1.03 1.03-3.836-.22-.37A9.962 9.962 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+      Book a Consultation
+    </a>
+  </div>
+  <div class="hero-scroll-hint" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="about-inner">
+      <div class="about-image-wrap reveal-left">
+        <img src="about.jpg" alt="Dr. Surya at Ayursparsham Ayurveda Clinic" loading="lazy"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+        <div style="display:none;width:100%;aspect-ratio:4/5;background:linear-gradient(135deg,#d4e8da,#e8f0eb);border-radius:20px;align-items:center;justify-content:center;">
+          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#2a5a40" stroke-width="1" aria-hidden="true"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <div class="about-image-badge">
+          <div class="num">10+</div>
+          <div class="txt">Years of Healing</div>
+        </div>
+      </div>
+      <div class="about-text reveal-right">
+        <span class="section-label">Who We Are</span>
+        <h2 class="section-title" id="about-heading">Kerala Ayurveda,<br>Practised with Purpose</h2>
+        <div class="section-divider"></div>
+        <p class="section-sub">
+          Under the guidance of Dr. Surya, Ayursparsham Ayurveda Clinic brings the time-honoured healing traditions of Kerala to the heart of Elayavoor, Kannur. Every treatment is rooted in classical Ayurvedic principles — personalised, compassionate, and deeply effective. Whether you seek recovery, balance, or rejuvenation, Dr. Surya and our dedicated therapists are with you at every step of your healing journey.
+        </p>
+        <div class="about-pillars">
+          <div class="pillar-card">
+            <svg class="p-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M12 6v6l4 2"/></svg>
+            <h4>Classical Practice</h4>
+            <p>Treatments follow authentic Ashtanga Hridayam protocols</p>
+          </div>
+          <div class="pillar-card">
+            <svg class="p-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 4.97-4.03 9-9 9S3 16.97 3 12 7.03 3 12 3s9 4.03 9 9z"/></svg>
+            <h4>Personalised Care</h4>
+            <p>Every plan tailored to your Prakriti and health goals</p>
+          </div>
+          <div class="pillar-card">
+            <svg class="p-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4.5 9.5V5.5a2 2 0 012-2h11a2 2 0 012 2v4"/><path d="M2 14.5h20M12 12.5v7"/></svg>
+            <h4>Pure Medicines</h4>
+            <p>100% natural herbal formulations, no synthetics</p>
+          </div>
+          <div class="pillar-card">
+            <svg class="p-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            <h4>Trusted Therapists</h4>
+            <p>Experienced, gentle, and certified treatment team</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" aria-labelledby="services-heading">
+  <div class="container">
+    <div class="services-header reveal">
+      <span class="section-label">What We Offer</span>
+      <h2 class="section-title" id="services-heading">Our Treatments</h2>
+      <div class="section-divider" style="margin:16px auto 16px;"></div>
+      <p class="section-sub">Traditional Kerala Ayurveda therapies designed to restore balance, vitality, and harmony to mind and body.</p>
+    </div>
+    <div class="services-grid">
+
+      <article class="service-card reveal" style="transition-delay:0.05s">
+        <div class="service-img-placeholder">
+          <img src="panchakarma.jpg" alt="Panchakarma" class="service-img">
+        </div>
+        <div class="service-body">
+          <h3>Panchakarma</h3>
+          <p>Full-body detox and rejuvenation through classical five-fold purification</p>
+          <span class="service-tag">Detox</span>
+        </div>
+      </article>
+
+      <article class="service-card reveal" style="transition-delay:0.1s">
+        <div class="service-img-placeholder">
+          <img src="postpregnancycare.jpg" alt="Post Pregnancy Care" class="service-img">
+        </div>
+        <div class="service-body">
+          <h3>Post Pregnancy Care</h3>
+          <p>Prasavaraksha for new mothers — healing, strength, and balance restored</p>
+          <span class="service-tag">Women's Health</span>
+        </div>
+      </article>
+
+      <article class="service-card reveal" style="transition-delay:0.15s">
+        <div class="service-img-placeholder">
+          <img src="agnikarma.jpg" alt="Agni Treatment" class="service-img">
+        </div>
+        <div class="service-body">
+          <h3>Agni Karma</h3>
+          <p>Digestive fire restoration to revitalise metabolism and gut health</p>
+          <span class="service-tag">Digestive</span>
+        </div>
+      </article>
+
+      <article class="service-card reveal" style="transition-delay:0.2s">
+        <div class="service-img-placeholder">
+          <img src="udwarthanam.jpg" alt="Udwarthanam" class="service-img">
+        </div>
+        <div class="service-body">
+          <h3>Udwarthanam</h3>
+          <p>Herbal powder body therapy for skin rejuvenation and weight management</p>
+          <span class="service-tag">Body Therapy</span>
+        </div>
+      </article>
+
+      <article class="service-card reveal" style="transition-delay:0.25s">
+        <div class="service-img-placeholder">
+          <img src="shirodhara.jpg" alt="Shirodhara" class="service-img">
+        </div>
+        <div class="service-body">
+          <h3>Shirodhara</h3>
+          <p>Continuous warm oil flow over the forehead for deep stress relief</p>
+          <span class="service-tag">Stress Relief</span>
+        </div>
+      </article>
+
+      <article class="service-card reveal" style="transition-delay:0.3s">
+        <div class="service-img-placeholder">
+          <img src="nadipariksha.jpg" alt="Nadi Pariksha" class="service-img">
+        </div>
+        <div class="service-body">
+          <h3>Nadi Pariksha</h3>
+          <p>Traditional pulse diagnosis for deep constitutional health assessment</p>
+          <span class="service-tag">Diagnosis</span>
+        </div>
+      </article>
+
+      <article class="service-card reveal" style="transition-delay:0.35s;grid-column: 2;">
+        <div class="service-img-placeholder">
+          <img src="swarnaprashana.jpg" alt="Swarna Prashana" class="service-img">
+        </div>
+        <div class="service-body">
+          <h3>Swarna Prashana</h3>
+          <p>Ayurvedic gold-based immunity booster for children's health and development</p>
+          <span class="service-tag">Children's Health</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" aria-labelledby="gallery-heading">
+  <div class="container">
+    <div class="gallery-header reveal">
+      <span class="section-label" style="color:rgba(201,168,76,0.8)">Our Space</span>
+      <h2 class="section-title" id="gallery-heading">The Healing Environment</h2>
+      <div class="section-divider" style="margin:16px auto;background:rgba(201,168,76,0.5);"></div>
+      <p class="section-sub">Step into a space designed for calm — where tradition meets tranquillity.</p>
+    </div>
+    <div class="gallery-grid">
+      <!-- Gallery items 1-6 -->
+      <div class="gallery-item reveal" data-index="0" tabindex="0" role="button" aria-label="Gallery image 1, open fullscreen">
+        <div class="gallery-item-placeholder">
+          <img src="pic1.jpg" alt="Ayursparsham clinic interior" loading="lazy" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0"/>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+        </div>
+        <div class="gallery-zoom" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+        </div>
+      </div>
+      <div class="gallery-item reveal" data-index="1" tabindex="0" role="button" aria-label="Gallery image 2, open fullscreen" style="transition-delay:0.05s">
+        <div class="gallery-item-placeholder">
+          <img src="pic2.jpg" alt="Treatment room at Ayursparsham" loading="lazy" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0"/>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+        </div>
+        <div class="gallery-zoom" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+        </div>
+      </div>
+      <div class="gallery-item reveal" data-index="2" tabindex="0" role="button" aria-label="Gallery image 3, open fullscreen" style="transition-delay:0.1s">
+        <div class="gallery-item-placeholder">
+          <img src="pic3.jpg" alt="Ayurvedic medicines and herbs" loading="lazy" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0"/>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+        </div>
+        <div class="gallery-zoom" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+        </div>
+      </div>
+      <div class="gallery-item reveal" data-index="3" tabindex="0" role="button" aria-label="Gallery image 4, open fullscreen" style="transition-delay:0.15s">
+        <div class="gallery-item-placeholder">
+          <img src="pic4.jpg" alt="Shirodhara therapy setup" loading="lazy" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0"/>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+        </div>
+        <div class="gallery-zoom" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+        </div>
+      </div>
+      <div class="gallery-item reveal" data-index="4" tabindex="0" role="button" aria-label="Gallery image 5, open fullscreen" style="transition-delay:0.2s">
+        <div class="gallery-item-placeholder">
+          <img src="pic5.jpg" alt="Dr. Surya in consultation" loading="lazy" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0"/>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+        </div>
+        <div class="gallery-zoom" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+        </div>
+      </div>
+      <div class="gallery-item reveal" data-index="5" tabindex="0" role="button" aria-label="Gallery image 6, open fullscreen" style="transition-delay:0.25s">
+        <div class="gallery-item-placeholder">
+          <img src="pic6.jpg" alt="Clinic reception area" loading="lazy" style="width:100%;height:100%;object-fit:cover;position:absolute;top:0;left:0"/>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+        </div>
+        <div class="gallery-zoom" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <div class="lightbox-inner">
+    <button class="lb-close" id="lbClose" aria-label="Close lightbox">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <img id="lbImg" src="" alt="Gallery image" />
+  </div>
+  <button class="lb-prev" id="lbPrev" aria-label="Previous image">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+  </button>
+  <button class="lb-next" id="lbNext" aria-label="Next image">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+  </button>
+</div>
+
+<!-- REVIEWS -->
+<section id="reviews" aria-labelledby="reviews-heading">
+  <div class="container">
+    <div class="reviews-header reveal">
+      <span class="section-label">What People Say</span>
+      <h2 class="section-title" id="reviews-heading">Patient Stories</h2>
+      <div class="section-divider" style="margin:16px auto;"></div>
+      <p class="section-sub">Real experiences from those who chose Ayursparsham for their healing journey.</p>
+    </div>
+    <div class="reviews-outer">
+      <div class="reviews-track-wrap">
+        <div class="reviews-track" id="reviewsTrack">
+
+          <div class="review-card reveal">
+            <div class="review-top">
+              <div class="review-avatar" aria-hidden="true">A</div>
+              <div>
+                <div class="review-name">Arshida Arshi</div>
+                <div class="review-stars" aria-label="5 out of 5 stars">
+                  <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+                  <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+                  <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+                  <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+                  <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="review-text" id="r0">
+              <span class="short">I had a wonderful experience from Dr. Surya's Ayursparsham Ayurveda Clinic. Dr. Surya explained the treatment process in a way that was easy to understand.</span>
+              <span class="long"> The Prasavaraksha I received was deeply healing, both physically and mentally. I felt lighter, more energetic, and more balanced. Highly recommend for authentic Ayurvedic healing.</span>
+            </div>
+            <button class="read-more-btn" onclick="toggleRead(this,'r0')" aria-expanded="false">Read more</button>
+          </div>
+
+          <div class="review-card reveal" style="transition-delay:0.08s">
+            <div class="review-top">
+              <div class="review-avatar" aria-hidden="true">A</div>
+              <div>
+                <div class="review-name">Aflah Kounine G</div>
+                <div class="review-stars" aria-label="5 out of 5 stars">
+                  <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+                  <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+                  <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+                  <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+                  <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="review-text" id="r1">
+              <span class="short">I recently completed a 7-day postpartum treatment, truly worth it. Both physically and mentally better.</span>
+              <span class="long"> The therapist was amazing — cooperative, gentle, kind-hearted. Highly recommend to all new moms.</span>
+            </div>
+            <button class="read-more-btn" onclick="toggleRead(this,'r1')" aria-expanded="false">Read more</button>
+          </div>
+
+          <div class="review-card reveal" style="transition-delay:0.16s">
+            <div class="review-top">
+              <div class="review-avatar" aria-hidden="true">A</div>
+              <div>
+                <div class="review-name">Aparna Chembil</div>
+                <div class="review-stars" aria-label="5 out of 5 stars">
+                  <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+                  <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+                  <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+                  <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+                  <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="review-text" id="r2">
+              <span class="short">14-day postnatal treatment with Dr. Surya — extremely pleasant and hassle-free. Saw visible change in skin glow.</span>
+              <span class="long"> Therapist Rekha was excellent and tailored treatments to my needs. Highly recommend to new mothers.</span>
+            </div>
+            <button class="read-more-btn" onclick="toggleRead(this,'r2')" aria-expanded="false">Read more</button>
+          </div>
+
+          <div class="review-card reveal" style="transition-delay:0.24s">
+            <div class="review-top">
+              <div class="review-avatar" aria-hidden="true">A</div>
+              <div>
+                <div class="review-name">Anusree Ajith</div>
+                <div class="review-stars" aria-label="5 out of 5 stars">
+                  <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+                  <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+                  <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+                  <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+                  <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="review-text" id="r3">
+              <span class="short">14-day postnatal ayurvedic treatment after C-section, really helped my recovery.</span>
+              <span class="long"> Therapist Ms Rekha tailored each session to my comfort level. Highly recommended.</span>
+            </div>
+            <button class="read-more-btn" onclick="toggleRead(this,'r3')" aria-expanded="false">Read more</button>
+          </div>
+
+          <div class="review-card reveal" style="transition-delay:0.32s">
+            <div class="review-top">
+              <div class="review-avatar" aria-hidden="true">S</div>
+              <div>
+                <div class="review-name">Sinsha Dinesh</div>
+                <div class="review-stars" aria-label="5 out of 5 stars">
+                  <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+                  <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+                  <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+                  <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+                  <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="review-text" id="r4">
+              <span class="short">Big thanks to Dr. Surya's Ayursparsham for post natal care. 10 days of Prasavaraksha — deeply healing physically and mentally.</span>
+              <span class="long"> Dr. Surya personally visited and explained the procedure. Highly recommend.</span>
+            </div>
+            <button class="read-more-btn" onclick="toggleRead(this,'r4')" aria-expanded="false">Read more</button>
+          </div>
+
+          <div class="review-card reveal" style="transition-delay:0.4s">
+            <div class="review-top">
+              <div class="review-avatar" aria-hidden="true">A</div>
+              <div>
+                <div class="review-name">Annu Jose</div>
+                <div class="review-stars" aria-label="5 out of 5 stars">
+                  <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+                  <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+                  <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+                  <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+                  <svg viewBox="0 0 20 20" fill="#C9A84C" aria-hidden="true"><path d="M10 1l2.39 4.84 5.35.78-3.87 3.77.91 5.33L10 13.27l-4.78 2.51.91-5.33L2.26 6.62l5.35-.78z"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="review-text" id="r5">
+              <span class="short">10 days postnatal treatment with Dr. Surya — great relaxing experience. Dr. Surya was friendly and helpful.</span>
+              <span class="long"> Therapist Rekha was very caring. Recommend to all ladies wanting a soothing postnatal experience.</span>
+            </div>
+            <button class="read-more-btn" onclick="toggleRead(this,'r5')" aria-expanded="false">Read more</button>
+          </div>
+
+        </div>
+      </div>
+      <div class="reviews-controls">
+        <button class="rev-btn" id="revPrev" aria-label="Previous review">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="rev-btn" id="revNext" aria-label="Next review">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" aria-labelledby="contact-heading">
+  <div class="container">
+    <div class="contact-inner">
+      <div class="contact-info reveal-left">
+        <span class="section-label">Get in Touch</span>
+        <h2 class="section-title" id="contact-heading">Visit Us</h2>
+        <div class="section-divider"></div>
+        <p class="section-sub" style="margin-bottom:32px">We welcome you to experience authentic Ayurveda in a calm and caring environment. Reach out to book your consultation.</p>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="contact-detail-text">
+            <strong>Address</strong>
+            <span>Ayursparsham Ayurveda Clinic<br>Elayavoor, Kannur, Kerala</span>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.09a16 16 0 006 6l.36-.36a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <div class="contact-detail-text">
+            <strong>Phone / WhatsApp</strong>
+            <span><a href="tel:+918848453300" style="color:var(--green-deep)">+91 88484 53300</a></span>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <div class="contact-detail-text">
+            <strong>Clinic Hours</strong>
+            <table class="hours-table" aria-label="Opening hours">
+              <tr><td>Monday – Saturday</td><td>9:00 AM – 5:30 PM</td></tr>
+              <tr><td>Sunday</td><td>Closed</td></tr>
+            </table>
+          </div>
+        </div>
+
+        <a href="https://wa.me/918848453300" class="btn-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.554 4.1 1.52 5.824L.057 23.272a.75.75 0 00.922.922l5.448-1.463A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.9 0-3.68-.516-5.197-1.413l-.37-.22-3.836 1.03 1.03-3.836-.22-.37A9.962 9.962 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          Chat on WhatsApp
+        </a>
+
+        <div class="social-row">
+          <a href="https://www.facebook.com/100067480095322" class="social-link" target="_blank" rel="noopener" aria-label="Visit Ayursparsham on Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="https://wa.me/918848453300" class="social-link" target="_blank" rel="noopener" aria-label="Message Ayursparsham on WhatsApp" style="background:#25D366">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.554 4.1 1.52 5.824L.057 23.272a.75.75 0 00.922.922l5.448-1.463A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.9 0-3.68-.516-5.197-1.413l-.37-.22-3.836 1.03 1.03-3.836-.22-.37A9.962 9.962 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="map-wrap reveal-right">
+        <iframe
+          src="https://maps.google.com/maps?q=Ayursparsham+Ayurveda+Clinic+Elayavoor+Kannur&output=embed"
+          title="Ayursparsham Ayurveda Clinic location on Google Maps"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer aria-label="Site footer">
+  <div class="footer-top">
+    <a href="#hero" class="footer-logo" aria-label="Back to top">
+      <img src="logopng.png" alt="Ayursparsham Ayurveda Clinic" />
+    </a>
+    <p class="footer-tagline">Ancient Wisdom. Modern Healing.</p>
+    <div class="footer-social">
+      <a href="https://wa.me/918848453300" class="footer-social-link" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.554 4.1 1.52 5.824L.057 23.272a.75.75 0 00.922.922l5.448-1.463A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.9 0-3.68-.516-5.197-1.413l-.37-.22-3.836 1.03 1.03-3.836-.22-.37A9.962 9.962 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+      </a>
+      <a href="https://www.facebook.com/100067480095322" class="footer-social-link" target="_blank" rel="noopener" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2025 Ayursparsham Ayurveda Clinic · Elayavoor, Kannur</p>
+    <p class="footer-credit">Elevion Media</p>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/918848453300" class="float-wa" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.554 4.1 1.52 5.824L.057 23.272a.75.75 0 00.922.922l5.448-1.463A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.9 0-3.68-.516-5.197-1.413l-.37-.22-3.836 1.03 1.03-3.836-.22-.37A9.962 9.962 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+</a>
+
+<script>
+  // Navbar scroll
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 20);
+  }, { passive: true });
+
+  // Hamburger
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('open');
+    hamburger.classList.toggle('open', open);
+    hamburger.setAttribute('aria-expanded', open);
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Scroll animations
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => io.observe(el));
+
+  // Lightbox
+  const galleryItems = document.querySelectorAll('.gallery-item');
+  const lightbox = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lbImg');
+  const lbClose = document.getElementById('lbClose');
+  const lbPrev = document.getElementById('lbPrev');
+  const lbNext = document.getElementById('lbNext');
+  let currentLb = 0;
+  const galleryImages = Array.from({ length: 6 }, (_, i) => `gallery-${i+1}.jpg`);
+  const galleryAlts = ['Clinic interior','Treatment room','Ayurvedic herbs','Shirodhara setup','Dr. Surya consultation','Reception area'];
+
+  function openLightbox(idx) {
+    currentLb = idx;
+    lbImg.src = galleryImages[idx];
+    lbImg.alt = galleryAlts[idx];
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    lbClose.focus();
+  }
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  function lbGoTo(idx) {
+    currentLb = (idx + 6) % 6;
+    lbImg.src = galleryImages[currentLb];
+    lbImg.alt = galleryAlts[currentLb];
+  }
+
+  galleryItems.forEach((item, i) => {
+    item.addEventListener('click', () => openLightbox(i));
+    item.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLightbox(i); } });
+  });
+  lbClose.addEventListener('click', closeLightbox);
+  lbPrev.addEventListener('click', () => lbGoTo(currentLb - 1));
+  lbNext.addEventListener('click', () => lbGoTo(currentLb + 1));
+  lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+  document.addEventListener('keydown', e => {
+    if (!lightbox.classList.contains('open')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') lbGoTo(currentLb - 1);
+    if (e.key === 'ArrowRight') lbGoTo(currentLb + 1);
+  });
+
+  // Reviews mobile swipe
+  const track = document.getElementById('reviewsTrack');
+  const trackWrap = track.parentElement;
+  const revPrev = document.getElementById('revPrev');
+  const revNext = document.getElementById('revNext');
+  revPrev.addEventListener('click', () => { trackWrap.scrollBy({ left: -300, behavior: 'smooth' }); });
+  revNext.addEventListener('click', () => { trackWrap.scrollBy({ left: 300, behavior: 'smooth' }); });
+
+  // Read more toggle
+  function toggleRead(btn, id) {
+    const el = document.getElementById(id);
+    const expanded = el.classList.toggle('expanded');
+    btn.textContent = expanded ? 'Read less' : 'Read more';
+    btn.setAttribute('aria-expanded', expanded);
+  }
+
+  // 7th service card center fix on desktop
+  function fixSeventhCard() {
+    const grid = document.querySelector('.services-grid');
+    if (!grid) return;
+    const cols = window.getComputedStyle(grid).gridTemplateColumns.split(' ').length;
+    const card7 = grid.querySelector('.service-card:last-child');
+    if (!card7) return;
+    if (cols === 3) {
+      card7.style.gridColumn = '2';
+    } else {
+      card7.style.gridColumn = '';
+    }
+  }
+  fixSeventhCard();
+  window.addEventListener('resize', fixSeventhCard);
+</script>
+</body>
+</html>
